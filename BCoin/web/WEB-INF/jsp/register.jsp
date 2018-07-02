@@ -174,7 +174,7 @@
         };
 
         $.post("<%=basePath%>Bcoin/register.action",$("#userRegister").serialize(),function(data){
-            alert("客户信息更新成功！" + data);
+            alert("客户信息更新成功！" + data.code);
         });
 
 

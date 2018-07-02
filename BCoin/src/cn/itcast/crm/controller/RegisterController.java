@@ -45,7 +45,6 @@ public class RegisterController {
             map.put("code" , -1);
             return map;
         }
-        userInfo.setId(1);
         try {
             UserInfo user = registerService.checkUserIsExistWithUserInfo(userInfo);
             if (user == null) {
